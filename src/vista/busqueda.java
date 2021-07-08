@@ -127,6 +127,8 @@ public class busqueda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         cbxNivel = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -139,8 +141,6 @@ public class busqueda extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         cbxConcepto = new javax.swing.JComboBox<>();
-        Desde = new com.toedter.calendar.JDateChooser();
-        Hasta = new com.toedter.calendar.JDateChooser();
         jLabel5 = new javax.swing.JLabel();
         labelTotalLineas = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -148,6 +148,8 @@ public class busqueda extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, -1));
+        getContentPane().add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 140, -1));
 
         cbxNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TODOS", "INICIAL", "PRIMARIO", "SECUNDARIO", "TERCIARIO" }));
         getContentPane().add(cbxNivel, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 11, 130, -1));
@@ -169,7 +171,7 @@ public class busqueda extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaPagos);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 93, 1040, 450));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 93, 960, 400));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Desde: ");
@@ -203,8 +205,6 @@ public class busqueda extends javax.swing.JFrame {
 
         cbxConcepto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TODOS", "MATRICULA", "SEGURO", "CUOTAS", "OTROS" }));
         getContentPane().add(cbxConcepto, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 140, -1));
-        getContentPane().add(Desde, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 130, -1));
-        getContentPane().add(Hasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 140, -1));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Total Pagos en Lista :");
@@ -216,7 +216,7 @@ public class busqueda extends javax.swing.JFrame {
         jLabel7.setBackground(new java.awt.Color(0, 0, 0));
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/textura-madera-en-negro_2560x1600_xtrafondos.com.jpg"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 630));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 500));
 
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 600, -1, -1));
@@ -264,12 +264,12 @@ public class busqueda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser Desde;
-    private com.toedter.calendar.JDateChooser Hasta;
     private javax.swing.JButton btnFiltrar;
     private javax.swing.JComboBox<String> cbxConcepto;
     private javax.swing.JComboBox<String> cbxNivel;
     private javax.swing.JButton jButton1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
